@@ -13,7 +13,7 @@ class DatabaseHandler():
         dblist = self.client.get_list_database()
         print(dblist)
 
-    def write_to_db(self, data:Tuple) -> None:
+    def write_to_db(self, sensor_name:str ,data:Tuple) -> None:
         self.client.switch_database(self.db_name)
         json_body = [
         {
@@ -24,7 +24,7 @@ class DatabaseHandler():
             },
         "time": data[0],
         "fields": {
-            "CPU-Temp": data[1]
+            sensor_name: data[1]
             }
         }]
         self.client.write_points(json_body)
