@@ -1,3 +1,4 @@
 *.pyc
 .vscode/settings.json
 grafana_6.2.2_armhf.deb
+*.out
