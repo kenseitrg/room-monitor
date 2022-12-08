@@ -1,5 +1,5 @@
 astroid==2.0.2
-certifi==2018.8.24
+certifi==2022.12.7
 cffi==1.12.3
 chardet==3.0.4
 Dexter-AutoDetection-and-I2C-Mutex==0.0.0
